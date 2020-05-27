@@ -1,3 +1,43 @@
-body {
-color: black;
+
+.moja_tabela{
+    border-collapse:collapse ;
+    border: 1px solid black;
 }
+.row {
+    background: lightblue ;
+}
+.col {
+    border:2px solid black ;
+}
+
+.main{
+    grid-area: main ;
+    background: tomato;
+    display: flex;
+    align-items: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: #90ee90 ;
+}
+.footer{
+    grid-area: footer;
+    background: lightblue ;
+}
+.header{
+    grid-area: header;
+    background: blue ;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr  1fr 1fr ;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar footer footer"
+    ;
+}
+
